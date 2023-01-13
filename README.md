@@ -4,7 +4,7 @@ Example application demonstrating `@ngxs/store` regression for configuration `st
 
 ### Reproducing the issue
 
-Under [app.module.ts](/ngxs-sample-app/blob/stable/src/app/app.module.ts#L29) we can see that `ngxs` is configured [according to the documentation](https://www.ngxs.io/advanced/options):
+Under [app.module.ts](https://github.com/aaronfay/ngxs-sample-app/blob/stable/src/app/app.module.ts#L29) we can see that `ngxs` is configured [according to the documentation](https://www.ngxs.io/advanced/options):
 
 ```js
     NgxsModule.forRoot(
