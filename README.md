@@ -21,8 +21,12 @@ Under [app.module.ts](/ngxs-sample-app/blob/stable/src/app/app.module.ts#L29) we
 After running `npm run build` in production mode, we can see there are still instances of unsafe JS:
 
 ```
-npm run build
-grep 'new Func' ./dist/**/*.js
+$ npm run build
+> angular.io-example@0.0.0 build
+> ng build --configuration production
+...
+
+$ grep 'new Func' ./dist/**/*.js
 
 ./dist/main.4db11c14788aa303.js:  const fn = new Function('store', 'return ' + expr + ';');
 ./dist/main.4db11c14788aa303.js:    return new Function(...args);
